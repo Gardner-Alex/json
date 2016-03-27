@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON with HTML</h2>
+<p id="jsongame"></p>
+<script>
+var videogames = '{"Character":"Link","Game":"The Legend of Zelda","Position":"Hero of Time","World":"Hyrule"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("jsongame").innerHTML =
+obj.Character + "<br>" +
+obj.Game + "<br>" +
+obj.Position + "<br>" + 
+obj.World;
+</script>
+
+</body>
+</html>
